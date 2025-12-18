@@ -53,8 +53,9 @@ After flattening, dense layers combine all learned features to produce class pro
 ## Training objective
 
 - The model outputs $\hat{y}$ via softmax.
-- We minimize **categorical cross-entropy**:  
-  $$\mathcal{L}(y, \hat{y}) = -\sum_{k=1}^{10} y_k \log(\hat{y}_k)$$
+- We minimize **categorical cross-entropy**:
+
+$$\mathcal{L}(y, \hat{y}) = -\sum_{k=1}^{10} y_k \log(\hat{y}_k)$$
 
 ## Optimization and learning-rate schedule (in this repo)
 
@@ -67,4 +68,3 @@ After flattening, dense layers combine all learned features to produce class pro
 - Padding to 3232 aligns with the original LeNet-5 input size.
 - Normalizing pixel values to [0, 1] improves optimization stability.
 - One-hot labels are required for categorical cross-entropy with a softmax output.
-
