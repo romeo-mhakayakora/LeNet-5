@@ -1,0 +1,18 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lenet5-mnist"
+version = "0.1.0"
+description = "LeNet-5 on MNIST"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy", "tensorflow"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
