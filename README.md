@@ -22,3 +22,8 @@ python scripts/train.py --epochs 20 --batch-size 32 --model-out models/best_mode
 - Input images are padded from 28x28 to 32x32.
 - Uses `tanh` activations and average pooling, matching classic LeNet-5 style.
 
+
+## Theory
+
+- See docs/lenet5_theory.md for a layer-by-layer explanation of how LeNet-5 works. 
+
